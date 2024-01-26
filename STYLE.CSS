@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: cursive;
+
+}
+
+body{
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.container{
+    background: linear-gradient(120deg,#00feba,#14b447);
+    width: 600px;
+    text-align: center;
+    height: auto;
+    border-radius: 25px;
+
+}
+
+h1{
+    margin: 20px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.form input[type="text"]{
+    padding: 10px;
+    width: 70%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 25px;
+    background: transparent;
+    color: red;
+}
+.form input[type="submit"]{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover{
+    background-color: black;
+}
+
+.temperature{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.description{
+    font-size: 20px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.more-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.more-details .weather-info,.weather-info1,.weather-info2{
+    background-color: rgb(183, 245, 27);
+    border: 1px solid rgb(24, 176, 18);
+    padding: 30px;
+    align-items: center;
+    margin: 3px;
+    cursor: pointer;
+    border-radius: 25px;
+    background: transparent;
+}
+
+input::placeholder{
+    font-size: 20px;
+    color: rgb(214, 47, 10);
+}
+
+.icons img{
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+}
+
+.information{
+    display: none;
+}
+@media (max-width: 660px) {
+    .form{
+        display: flex;
+        flex-direction:column;
+    }
+    .more-details{
+        flex-wrap: wrap;
+    }
+    .form input[type="text"]{
+        margin: 10px;
+    }
+
+    .container{
+        height: auto;
+    }
+    
+}
+
+
+h3{
+    color: red;
+    display: none;
+    text-align: center;
+}
+
